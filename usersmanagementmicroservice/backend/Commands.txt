@@ -1,0 +1,14 @@
+
+#build the docker image
+docker build -t usermgmtsvcimg .
+
+
+#run the docker image
+docker run -it -p8080:8080 usermgmtsvcimg:latest
+
+
+#bring up docker-compose for prometheus and grafana
+
+docker-compose up
+
+Now, Prometheus is accessible via http://localhost:9090 and Grafana is accessible via http://localhost:3000.

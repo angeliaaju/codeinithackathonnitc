@@ -1,0 +1,4 @@
+FROM openjdk:17
+ADD target/usersmanagementsystem-0.0.1-SNAPSHOT.jar usersmanagementsystem-0.0.1-SNAPSHOT.jar
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","usersmanagementsystem-0.0.1-SNAPSHOT.jar"]
